@@ -1,0 +1,20 @@
+{
+  "name": "Getting Started Example",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "devtools_page": "devtools.html",
+
+  "commands": {
+    "name-of-command-passed-into-function": {
+      "suggested_key": "Ctrl+Shift+Q",
+      "description": "do somthing"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "activeTab", "scripting","tabs"],
+}
