@@ -6,7 +6,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "devtools_page": "devtools.html",
   "commands": {
     "name-of-command-passed-into-function": {
       "suggested_key": "Ctrl+Shift+Q",
