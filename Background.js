@@ -1,8 +1,8 @@
-chrome.commands.onCommand.addListener((command,tab) => {
-"action": {
-      "type": "redirect",
-      "redirect": {
-         "extensionPath": "https://calendar.google.com/calendar/u/0/r"
-      }
-    }
-}
+chrome.commands.onCommand.addListener((command) => {
+  if (command === "name-of-command-passed-into-function") {
+    chrome.tabs.create({
+      url: "https://calendar.google.com/calendar/u/0/r"
+    });
+  }
+});
+
