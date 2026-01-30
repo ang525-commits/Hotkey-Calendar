@@ -8,8 +8,10 @@
   },
   "commands": {
     "name-of-command-passed-into-function": {
-      "suggested_key": "Ctrl+Shift+Q",
-      "description": "do somthing"
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q"
+      },
+      "description": "do something"
     }
   }
 }
