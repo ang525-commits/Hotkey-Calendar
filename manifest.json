@@ -12,7 +12,5 @@
       "suggested_key": "Ctrl+Shift+Q",
       "description": "do somthing"
     }
-  },
-  "options_page": "options.html",
-  "permissions": ["storage", "activeTab", "scripting","tabs"]
+  }
 }
