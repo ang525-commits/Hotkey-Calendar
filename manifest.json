@@ -7,11 +7,23 @@
     "service_worker": "Background.js"
   },
   "commands": {
-    "name-of-command-passed-into-function": {
-      "suggested_key": {
+    "My Calendar": {
+      "Shortcut1": {
         "default": "Ctrl+Shift+Q"
       },
-      "description": "do something"
+      "description": "Open Calendar"
+    },
+    "My Email": {
+      "Shortcut2": {
+        "default": "Ctrl+Shift+1"
+      },
+      "description": "Open Email"
+    },
+    "My Drive": {
+      "Shortcut3": {
+        "default": "Ctrl+Shift+2"
+      },
+      "description": "Open Google Drive"
     }
   }
 }
