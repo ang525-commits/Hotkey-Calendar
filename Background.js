@@ -1,7 +1,7 @@
 chrome.commands.onCommand.addListener((command) => {
   if (command === "My Calendar") {
     chrome.tabs.create({
-      url: "https://calendar.google.com/calendar/u/0/r"
+      url: "https://calendar.google.com"
     });
   } elseif (command === "My Email") {
     chrome.tabs.create({
