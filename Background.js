@@ -12,5 +12,12 @@ chrome.commands.onCommand.addListener((command) => {
       url: "https://drive.google.com"
     });
   }
+   if (msg.action === 'activateRule') {
+     await chrome.bookmarks.create({
+      title: tab.title || "New Bookmark",
+      url: tab.url
+    });
+  });
+});
 });
 
