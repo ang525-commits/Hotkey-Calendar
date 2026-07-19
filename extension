@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Extension</title>
+    <script src="popup.js" defer ></script>
+  </head>
+  <style>
+  body {
+  font-family: "Times New Roman";
+  background-color: #008CBA;
+}
+  </style>
+  <body>
+    <button id="Save",button style="background-color: #008CBA; color: white;">Save</button>
+  </body>
+</html>
