@@ -9,19 +9,19 @@
   "commands": {
     "My Calendar": {
       "Shortcut1": {
-        "default": "Ctrl+Shift+Q"
+        "default": "Ctrl+Shift+1"
       },
       "description": "Open Calendar"
     },
     "My Email": {
       "Shortcut2": {
-        "default": "Ctrl+Shift+1"
+        "default": "Ctrl+Shift+2"
       },
       "description": "Open Email"
     },
     "My Drive": {
       "Shortcut3": {
-        "default": "Ctrl+Shift+2"
+        "default": "Ctrl+Shift+3"
       },
       "description": "Open Google Drive"
     }
