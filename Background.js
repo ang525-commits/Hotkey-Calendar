@@ -12,10 +12,13 @@ chrome.commands.onCommand.addListener((command) => {
       url: "https://drive.google.com"
     });
   }
-   if (msg.action === 'bookmark') {
-      chrome.bookmarks.create({
-      title: tab.title || "New Bookmark",
-      url: tab.url
+   if (command === "bookmark") {
+    const [tab] = await chrome.tabs.query({
+      active: true,
+      currentWindow: true
+    });
+    chrome.bookmarks.create({
+    title: tab.title || "New Bookmark",
+    url: tab.url
     });
   });
-});
