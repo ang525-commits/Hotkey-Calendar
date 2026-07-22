@@ -1,4 +1,4 @@
-chrome.commands.onCommand.addListener((command) => {
+chrome.commands.onCommand.addListener(async(command) => {
   if (command === "My Calendar") {
     chrome.tabs.create({
       url: "https://calendar.google.com"
@@ -22,3 +22,4 @@ chrome.commands.onCommand.addListener((command) => {
     url: tab.url
     });
   });
+ });
