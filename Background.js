@@ -3,17 +3,17 @@ chrome.commands.onCommand.addListener((command) => {
     chrome.tabs.create({
       url: "https://calendar.google.com"
     });
-  } elseif (command === "My Email") {
+  } else if (command === "My Email") {
     chrome.tabs.create({
       url: "https://outlook.office.com/mail/"
     });
-  }elseif (command === "My Drive") {
+  }else if (command === "My Drive") {
     chrome.tabs.create({
       url: "https://drive.google.com"
     });
   }
    if (msg.action === 'bookmark') {
-     await chrome.bookmarks.create({
+      chrome.bookmarks.create({
       title: tab.title || "New Bookmark",
       url: tab.url
     });
