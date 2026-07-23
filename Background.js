@@ -11,8 +11,7 @@ chrome.commands.onCommand.addListener(async(command) => {
     chrome.tabs.create({
       url: "https://drive.google.com"
     });
-  }
-   if (command === "bookmark") {
+  } else if (command === "bookmark") {
     const [tab] = await chrome.tabs.query({
       active: true,
       currentWindow: true
@@ -21,5 +20,5 @@ chrome.commands.onCommand.addListener(async(command) => {
     title: tab.title || "New Bookmark",
     url: tab.url
     });
-  });
- });
+  };
+ }
