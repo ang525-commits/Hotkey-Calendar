@@ -16,6 +16,15 @@ chrome.commands.onCommand.addListener(async(command) => {
       active: true,
       currentWindow: true
     });
+    if (!tab || !tab.url) {
+      console.error("cannot bookmark");
+      return;
+    }
+
+    if (tab.url.startsWith("chrome://")) {
+      console.error("cannot bookmark.");
+      return;
+    }
     chrome.bookmarks.create({
     title: tab.title || "New Bookmark",
     url: tab.url
