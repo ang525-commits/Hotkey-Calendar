@@ -1,4 +1,4 @@
-chrome.commands.onCommand.addListener(async(command) => {
+chrome.commands.onCommand.addListener(async (command) => {
   if (command === "My Calendar") {
     chrome.tabs.create({
       url: "https://calendar.google.com"
@@ -7,7 +7,7 @@ chrome.commands.onCommand.addListener(async(command) => {
     chrome.tabs.create({
       url: "https://outlook.office.com/mail/"
     });
-  }else if (command === "My Drive") {
+  } else if (command === "My Drive") {
     chrome.tabs.create({
       url: "https://drive.google.com"
     });
@@ -16,6 +16,7 @@ chrome.commands.onCommand.addListener(async(command) => {
       active: true,
       currentWindow: true
     });
+
     if (!tab || !tab.url) {
       console.error("cannot bookmark");
       return;
@@ -25,9 +26,10 @@ chrome.commands.onCommand.addListener(async(command) => {
       console.error("cannot bookmark.");
       return;
     }
+
     chrome.bookmarks.create({
-    title: tab.title || "New Bookmark",
-    url: tab.url
+      title: tab.title || "New Bookmark",
+      url: tab.url
     });
-  };
- }
+  }
+});
