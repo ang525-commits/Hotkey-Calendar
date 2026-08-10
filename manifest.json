@@ -34,13 +34,6 @@
         "default": "Ctrl+Shift+3"
       },
       "description": "Open Google Drive"
-    },
-
-    "bookmark": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+4"
-      },
-      "description": "Bookmark current page"
     }
   }
 }
