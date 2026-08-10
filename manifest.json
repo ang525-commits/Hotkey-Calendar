@@ -3,32 +3,44 @@
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
+
   "permissions": [
     "commands",
     "tabs",
     "bookmarks"
   ],
+
   "background": {
     "service_worker": "Background.js"
   },
+
   "commands": {
     "My Calendar": {
-      "Shortcut1": {
+      "suggested_key": {
         "default": "Ctrl+Shift+1"
       },
       "description": "Open Calendar"
     },
+
     "My Email": {
-      "Shortcut2": {
+      "suggested_key": {
         "default": "Ctrl+Shift+2"
       },
       "description": "Open Email"
     },
+
     "My Drive": {
-      "Shortcut3": {
+      "suggested_key": {
         "default": "Ctrl+Shift+3"
       },
       "description": "Open Google Drive"
+    },
+
+    "bookmark": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+4"
+      },
+      "description": "Bookmark current page"
     }
   }
 }
